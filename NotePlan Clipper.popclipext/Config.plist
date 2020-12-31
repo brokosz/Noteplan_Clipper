@@ -13,6 +13,24 @@
 				<string>(?s)^.{1,1900}$</string>
 				<key>URL</key>
 				<string>noteplan://x-callback-url/addNote?text=%0A{popclip text}%0A%23clip%0A&amp;openNote=yes</string>
+				<key>Requirements</key>
+					<array>
+						<string>option-tag=1</string>
+					</array>
+			</dict>
+			<dict>
+				<key>Image File</key>
+				<string>docnote.png</string>
+				<key>Title</key>
+				<string>NotePlan Clipper</string>
+				<key>Regular Expression</key>
+				<string>(?s)^.{1,1900}$</string>
+				<key>URL</key>
+				<string>noteplan://x-callback-url/addNote?text=%0A{popclip text}%0A&amp;openNote=yes</string>
+				<key>Requirements</key>
+					<array>
+						<string>option-tag=0</string>
+					</array>
 			</dict>
 		</array>
 		<key>Extension Description</key>
@@ -21,6 +39,17 @@
 		<string>com.noteplan.noteplanclipper</string>
 		<key>Extension Name</key>
 		<string>NotePlan Clipper</string>
+		<key>Options</key>
+		<array>
+			<dict>
+				<key>Option Identifier</key>
+				<string>tag</string>
+				<key>Option Label</key>
+				<string>Add tag?</string>
+				<key>Option Type</key>
+				<string>boolean</string>
+			</dict>
+		</array>
 		<key>Apps</key>
 			<array>
 				<dict>
