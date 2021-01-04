@@ -10,9 +10,9 @@
 				<key>Title</key>
 				<string>NotePlan Clipper</string>
 				<key>Regular Expression</key>
-				<string>(?s)^.{1,1900}$</string>
+				<string>(?s)^.{1,1950}$</string>
 				<key>URL</key>
-				<string>noteplan://x-callback-url/addNote?text=%0A{popclip text}%0A%23clip%0A&amp;openNote=yes</string>
+				<string>noteplan://x-callback-url/addNote?text=%0A{popclip text}%0A%23{popclip option addtag}%0A&amp;openNote=yes</string>
 				<key>Requirements</key>
 					<array>
 						<string>option-tag=1</string>
@@ -24,7 +24,7 @@
 				<key>Title</key>
 				<string>NotePlan Clipper</string>
 				<key>Regular Expression</key>
-				<string>(?s)^.{1,1900}$</string>
+				<string>(?s)^.{1,1950}$</string>
 				<key>URL</key>
 				<string>noteplan://x-callback-url/addNote?text=%0A{popclip text}%0A&amp;openNote=yes</string>
 				<key>Requirements</key>
@@ -41,13 +41,23 @@
 		<string>NotePlan Clipper</string>
 		<key>Options</key>
 		<array>
-			<dict>
+				<dict>
 				<key>Option Identifier</key>
 				<string>tag</string>
 				<key>Option Label</key>
 				<string>Add tag?</string>
 				<key>Option Type</key>
 				<string>boolean</string>
+			</dict>
+			<dict>
+				<key>Option Identifier</key>
+				<string>addtag</string>
+				<key>Option Label</key>
+				<string>Tag (optional)</string>
+				<key>Option Type</key>
+				<string>string</string>
+				<key>Option Default Value</key>
+				<string>clipped</string>
 			</dict>
 		</array>
 		<key>Apps</key>
